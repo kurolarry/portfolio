@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio de Larry TSAMPI, étudiant en informatique à 3iL Ingénieur, spécialisé en développement Full-Stack et DevOps.">
+        <meta name="keywords" content="développement web, full-stack, devops, portfolio, étudiant ingénieur">
+        <meta name="author" content="Larry TSAMPI">
 
-        <title>portfolio</title>
+        <title>Larry TSAMPI - Portfolio Développeur</title>
 
         <link rel="stylesheet" href="assets/css/style.css">
+        
     </head>
     <body>
         <header>
-            <h1>Larry TSAMPI TEDOU</h1>
+            <h1><a href="#hero">Larry TSAMPI TEDOU</a></h1>
             <nav>
                 <ul>
                     <li><a href="#about">À propos</a></li>
@@ -23,59 +27,165 @@
 
         <main>
             <section id="hero">
-                <h2>Bonjour, je suis Larry</h2>
-                <p>Etudiant en informatique - 3iL Ingénieur</p>
-                <p>
-                    Je suis un etudiant ingenieur a la recherche d'une alternance de 24
-                    mois dès septembre 2026 en Dev Full-Stack, DevOps.
-                </p>
-                <a href="assets/cv/cv.pdf"> Télécharger mon CV </a>
-                <div class="text-center">
-                    <img src="assets/images/photo.jpeg" class="img-fluid" alt="Projet">
+                <div class="hero-wrapper">
+                    <div class="hero-text">
+                        <h2>Bonjour, je suis <strong>Larry</strong></h2>
+                        <p class="subtitle">Étudiant en informatique - 3iL Ingénieur</p>
+                        <p class="description">
+                            Passionné par le développement Full-Stack et DevOps, je recherche une alternance de 24 mois
+                            dès septembre 2026 pour mettre en pratique mes compétences et accelerer mon apprentissage.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="assets/cv/cv.pdf" >
+                                Télécharger mon CV
+                            </a>
+                            <a href="#contact" >
+                                Me contacter
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-photo">
+                        <img src="assets/images/photo.jpeg" alt="Photo de Larry TSAMPI">
+                    </div>
                 </div>
             </section>
 
             <section id="about">
-                <h2>À propos</h2>
-                <p>Bienvenue sur mon portfolio ! Je suis un développeur passionné par la création de solutions innovantes.</p>
+                <h2> À propos </h2>
+                <p>
+                    Bienvenue sur mon portfolio ! Actuellement en première année du cycle 
+                    ingénieur à 3iL, j'ai un fort sens du détail ainsi qu'une capacité d'analyse 
+                    me permettant de comprendre et de résoudre efficacement des problèmes.
+                   
+                </p>
+                <p>
+                    Mon parcours m'a permis d'acquérir des compétences solides en développement web,
+                    tant côté front-end que back-end, ainsi qu'une bonne compréhension des pratiques DevOps.
+                </p>
                 <h3>Mon parcours</h3>
-                <p>Je suis un étudiant en informatique à l'École d'Ingénieurs 3iL.</p>
                 <ul>
-                    <li>2025 - 2028 : Étudiant en informatique à l'École d'Ingénieurs 3iL</li>
-                    <li>2023 - 2025 : Prépa en sciences de l'ingénieur, Maths et Physique</li>
+                    <li><strong>2025 - 2028</strong> : Étudiant en informatique à l'École d'Ingénieurs 3iL</li>
+                    <li><strong>2023 - 2025</strong> : Prépa intégrée en sciences de l'ingénieur, Maths et Physique</li>
                 </ul>
+                <h3>Centres d'intérêt</h3>
+                <p>
+                    Programmation • Cinéma • Musique • Sciences
+                </p>
+            </section>
+
+
+
+            <section id="projects">
+                <h2>Mes Projets</h2>
+                <div class="grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project1.jpg" alt="OharaLib" onerror="this.src='https://via.placeholder.com/400x250/3498db/ffffff?text=OharaLib'">
+                        </div>
+                        <div class="project-content">
+                            <h3>OharaLib</h3>
+                            <p>Bibliothèque de présentation de livres en ligne, permettant de découvrir des ouvrages avec une interface moderne.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Node.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-small">Code</a>
+                                <a href="#" class="btn btn-small btn-secondary">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project2.jpg" alt="Portfolio" onerror="this.src='https://via.placeholder.com/400x250/2c3e50/ffffff?text=Portfolio'">
+                        </div>
+                        <div class="project-content">
+                            <h3>Portfolio Personnel</h3>
+                            <p>Site web responsive présentant mes compétences, projets et expériences.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-small">Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project3.jpg" alt="Gestion des courses" onerror="this.src='https://via.placeholder.com/400x250/e74c3c/ffffff?text=gestion+des+courses'">
+                        </div>
+                        <div class="project-content">
+                            <h3>Gestion des courses</h3>
+                            <p>Developpement d'une plateforme permettant a un utilisateur de gerer efficacementses courses du quotidien</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-small">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section id="skills">
                 <h2>Compétences</h2>
                 <ul>
-                    <li>Développement Web : HTML, CSS, JavaScript, React</li>
-                    <li>Backend : PHP, Node.js, Express.js</li>
-                    <li>Base de données : PostgreSQL MySQL</li>
-                    <li>Outils : Git, Docker, VS Code</li>
+                    <li><strong>Développement Web : </strong> HTML, CSS, JavaScript, React, Vue.js</li>
+                    <li><strong>Backend : </strong> PHP, Node.js, Express.js</li>
+                    <li><strong>Base de données : </strong> PostgreSQL, MySQL</li>
+                    <li><strong>Outils : </strong> Git, Docker, VS Code</li>
                 </ul>
             </section>
 
-            <section id="projects">
-                <h2>Projets</h2>
-                <p>Voici quelques-uns de mes projets :</p>
-                <article>
-                    <h3>OharaLib</h3>
-                    <p>Bibliotheque de presentation de livres en ligne.</p>
-                </article>
-                
-            </section>
-
             <section id="contact">
-                
-                <h2>Me Contacter</h2>
-                <p> email : larrytsampi@gmail.com</p>
+                <h2>Contactez-moi</h2>
 
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Envoyer
+                    </button>
+                </form>
             </section>
         </main>
 
         <footer>
-            <p>&copy; 2026 - Larry TSAMPI TEDOU.</p>
+            <p>&copy; 2026 Larry TSAMPI. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="#hero">Accueil</a>
+                <a href="#about">À propos</a>
+                <a href="#projects">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
         </footer>
+
+        <script src="assets/js/script.js"></script>
     </body>
 </html>

@@ -422,3 +422,49 @@ section h2::after {
         padding: 3rem 0;
     }
 }
+
+
+
+
+/* 9. ABOUT SECTION ARROWS */
+.about-switcher {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.about-arrow {
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.04);
+  color: #fff;
+  border-radius: 999px;
+  width: 42px;
+  height: 42px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.about-arrow:hover {
+  background: rgba(100,255,218,0.12);
+  border-color: rgba(100,255,218,0.25);
+}
+
+.about-panels {
+  flex: 1;
+}
+
+.about-panel {
+  display: none;
+  animation: fadeIn 0.25s ease;
+}
+
+.about-panel.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}

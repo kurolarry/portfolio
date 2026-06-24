@@ -1,372 +1,563 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="assets/css/style.css">
     <title>Larry Tsampi - Portfolio</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
     <!-- Header -->
-
-    <header class="header">
-        <a href="#hero" class="logo">Larry TSAMPI TEDOU</a>
+    <header class="header" >
+        <a href="#hero" class="logo"> <span class="logo-text">LT</span> </a>
 
         <nav class="navbar">
             <a href="#hero"> Home</a>
             <a href="#about">À propos</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Compétences</a>
+            <a href="#certifications">Certifications</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
-
     <!-- Hero Section -->
-
-    <section class="hero" id="hero">
+    <section class="hero" id="hero" >
         <div class="hero-content">
-            <h3>Salut, je m'appelle </h3><h1>Larry</h1>
-            <h3>je suis  <span>Etudiant à 3il Ingénieur,</span></h3>
-            <h3>Et développeur Web junior. </h3>
-            <p>
-                Étudiant en informatique passionné par le développement web,
-                les architectures backend et les technologies cloud, 
-                Je souhaite évoluer vers des postes de développeur full-stack,
-                puis vers le DevOps et la gestion de projet technique.
-            </p>
+            <div class="hero-welcome"> 
+                <h3>Salut, je m'appelle </h3>
+                <h1 class="hero-name">Larry</h1>
+                <h3>je suis développeur Web junior, </h3>
+                <h3>Et Etudiant Ingénieur en informatique.</h3>
+                <p>
+                    Passionné par le développement web,
+                    les architectures backend et les technologies cloud, 
+                    Je souhaite évoluer vers des postes de développeur Full-stack,
+                    puis vers le DevOps et la gestion de projet technique.
+                </p>
+            </div>
 
             <div class="hero-btn">
                 <a href="#projects" class="btn">Voir mes projets</a>
                 <a href="#contact" class="btn">Me contacter</a>
                 <a href="assets/cv/cv.pdf" class="btn">Télécharger mon CV</a>
             </div>
+            
+            <div class="hero-social">
+                <a href="https://www.linkedin.com/in/larry-tsampi-tedou-7a1b7b33b" class="contact-card" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/kurolarry" class="contact-card" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/kuro_larry" class="contact-card" target="_blank"><i class='bx bxl-instagram'></i></a>
+            </div>
+            
         </div>
 
         <div class="hero-img">
             <img src="assets/images/photo.jpeg" alt="Larry Tsampi Tedou">
         </div>
-
     </section>
 
     <!-- About Section -->
     <section id="about">
-        <div class="about-switcher">
-            <button class="about-arrow" id="prevAbout" aria-label="Section précédente">&#8592;</button>
-
-            <div class="about-panels">
-                <article class="about-panel active" data-panel="about">
-                    <h2>À propos de moi : Mes actus</h2>
-                    <h3>
-                        Je suis à la recherche d'une <strong>alternance en Développement Web | DevOps | Apprenti chef de projet</strong> pour septembre 2026.
-                    </h3>
-                    <br>
-                    <p>
-                        Actuellement en Master 1 du cycle ingénieur à 3iL, je suis à la recherche d'une alternance de 
-                        <strong>12 à 24 mois</strong> en <strong>Développement Web | DevOps | Apprenti chef de projet</strong> dès <strong>septembre 2026</strong>
-                    </p>
-                    <p>
-                        Mon objectif est de monter en compétence, tout en étant confronté aux réalités professionnelles 
-                        et ainsi, gagner en expérience. Je me forme de manière autonome aux pratiques DevOps et aux 
-                        technologies moderne telles que <strong>Spring Boot</strong>, <strong>TypeScript</strong>, 
-                        <strong>React</strong>, <strong>Angular</strong> et <strong>Node.js</strong> à travers des 
-                        projets personnel. 
-                        Rigoureux, adaptable et autonome, je suis motivé à intégrer une équipe en 
-                        tant qu’apprenti afin de contribuer activement à des projets concrets.
-                    </p>
-                </article>
-
-                <article class="about-panel" data-panel="stages">
-                    <h2>À propos de moi : Mes experiences professionnelles</h2>
-                    <h3>
-                        EcoStep REWARDS - Startup etudiante
-                    </h3>
-                    <p>
-                        Consultant stratégique et développeur Frontend - poste actuel 
-                    </p>
-                    <a class="btn" href=" https://vitrine-eco-step.vercel.app/" target="_blank" >Visiter notre site</a>
-                    <br>
-                    <br>
-                    <h3>
-                        Innovatech Association : 
-                    </h3>
-                    <p>
-                        Stagiaire Developpement de systèmes embarqués avec Arduino
-                    </p>
-                    <br>
-                    <h3>
-                        Imprimerie Nationale du Cameroun :
-                    </h3>
-                    <p>
-                       Stagiaire Assistant technique
-                    </p>
-                </article>
-
-                <article class="about-panel" data-panel="formations">
-                    <h2>À propos de moi : Mes Formations</h2>
-                    <h3>
-                        3il Ingénieur : 2025-2028
-                    </h3>
-                    <p>
-                        Actuellement en Master 1 du cycle ingénieur à 3iL, 
-                        Specialisation en développement, devOps, sécurité et IA.
-                    </p>
-                    <br>
-                    <h3>
-                        PrepaVogt : 2023-2025
-                    </h3>
-                    <p>
-                       Classe préparatoire aux grandes écoles d'ingénieurs.
-                       Algorithmiques, Maths Spé, Physiques et Sciences de l'ingénieur.
-                    </p>
-                </article>
-                
-            </div>
-
-            <button class="about-arrow" id="nextAbout" aria-label="Section suivante">&#8594;</button>
+        <div class="carousel-about">
+            <h2>À propos : </h2>
         </div>
+        <br>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active"> 
+                    <div class="carousel-content">
+                        <h3> Mon objectif </h3>
+                    </div>
+                    <div class="carousel-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; flex-wrap: wrap;">
+                        <div class="objectif-text">
+                            <h5>
+                                Je suis à la recherche d'une <strong>alternance en Développement Web | DevOps | Gestion de projets IT</strong> pour septembre 2026.
+                            </h5>
+                            <br>
+                            <p>
+                                Je prepare une entrée en niveau 2 cycle ingénieur et je suis à la recherche d'une alternance de 
+                                <strong>12 à 24 mois</strong> en <strong>Développement Web | DevOps | Gestion de projets IT</strong> dès <strong>septembre 2026</strong>
+                            </p>
+                            <p>
+                                Mon objectif est de monter en compétence, tout en étant confronté aux réalités professionnelles 
+                                et ainsi, gagner en expérience. <br> 
+                                Je me forme de manière autonome aux pratiques DevOps et aux technologies moderne telles que 
+                                <strong>Spring Boot</strong>, <strong>TypeScript</strong>, <strong>React</strong>, <strong>Angular</strong> 
+                                et <strong>Node.js</strong> à travers des projets personnel. <br>
+                                Rigoureux, adaptable et autonome, je suis motivé à intégrer une équipe en 
+                                tant qu’apprenti afin de contribuer activement à des projets concrets.
+                            </p>
+
+                        </div>
+                        <div class="objectif-img" >
+                            <img src="assets/images/imgObjectif.jpg" style="border-radius: 10%; width: 100%; max-width: 420px; " alt="imgObjectif">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-content">
+                        <h3>Mes Formations</h3>
+                    </div>
+                    <div class="carousel-content"  style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; flex-wrap: wrap; ">
+                        <div style="margin: 5px;">
+                            <h3 style="margin: 5;">Formations academiques</h3>
+                            <br>
+                            <ul>
+                                <li>
+                                    <h5>2025 - 2028 : 3il Ingénieur</h5>
+                                    <p>
+                                        Actuellement en Niveau 1 du cycle ingénieur à 3iL, et souhaitant me
+                                        spécialiser en développement, devOps, sécurité et IA.
+                                    </p>
+
+                                </li>
+                                <li>
+                                    <h5>2023 - 2025 : PrepaVogt</h5>
+                                    <p>
+                                        Classe préparatoire aux grandes écoles d'ingénieurs.
+                                        Algorithmiques, Analyse, Algèbre, Physiques et Sciences de l'ingénieur.
+                                    </p>
+
+                                </li>
+                            </ul>
+                            
+                        </div>
+                        <div style="margin: 5px;">
+                            <h3 style="margin: 5;">Autres formations</h3>
+                            <br>
+                            <ul>
+                                <li>
+                                    <h5> KodeKloud :</h5>
+                                    <p>J'y ai obtenu des certifications Linux, Devops & AWS.</p>   
+                                </li>
+                                <li>
+                                    <h5>The Odin Project :</h5>
+                                    <p>Plateforme de formation en développement Web, Javascript | React | Node.js.</p>
+                                </li>
+                                <li>
+                                    <h5>Innovatech Association :</h5>
+                                    <p>j'ai appris la programmation de composants electroniques avec le microcontrôleur Arduino, ainsi que les bases de l'électronique.</p>
+                                </li>
+                            </ul>
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-content">
+                        <h3>Experiences professionnelles</h3>
+                    </div>
+                    <div class="carousel-content">
+                        <ul>
+                            <li>
+                                <h5>EcoStep REWARDS - Startup etudiante</h5>
+                                <p>
+                                    EcoStep REWARDS est une entreprise constitué d'etudiants engagé 
+                                    dans l'ecologie et la lutte contre l'insalubrité. <br>
+                                    J'y occupe actuellement le poste de Consultant Stratégique et développeur Frontend. <br><br>
+                                    <a class="btn" href=" https://vitrine-eco-step.vercel.app/" >Visiter notre site</a>
+                                </p>    
+                            </li>
+                            <li>
+                                <h5> Innovatech Association : </h5>
+                                <p>
+                                    C'est une entreprise qui accompagne ses clients dans la conception de drones et qui propose 
+                                    des formations en électronique développement de systèmes embarqués, et robotique. <br>
+                                    Ma mission en tant que stagiaire était de participer à l'organisation des évènements
+                                    organisé par l'entreprise, et d'acquérir des compétences en developpement sur Arduino
+                                    afin de développer et d'effectuer des tests techniques sur des composants. 
+                                </p>
+                            </li>
+                            <li>
+                                <h5>Imprimerie Nationale du Cameroun :</h5>
+                                <p>
+                                    Entreprise d'etat chargé de la production des imprimés officielles du cameroun.
+                                    En tantq ue stagiaire, j'y ai appris le fonctionement d'une entreprise, et j'ai participé 
+                                    à des tâches pratiques comme la livraison de documents et au controle de qualité des commandes
+                                </p>
+                            </li>
+                        </ul>   
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
     </section>
 
     <!-- Projects Section -->
 
     <section  class="projects" id="projects">
-        <h2>Projets</h2>
-        <div class="projects-container">
-            <!-- Portfolio -->
-            <article class="project-card">
-                <div class="project-card-top">
-                    <span class="project-badge">Mon portfolio</span>
-                    <a class="project-link" href="https://kurolarry.github.io/portfolio/" target="_blank">En ligne</a>
-                </div>
-                <h3>Portfolio interactif</h3>
-                <p>Site personnel présentant projets, compétences et contact, 
-                    optimisé pour mobile.
-                </p>
-                <p>
-                    Entièrement développé en JavaScript Vanille et sans framework, 
-                    il sera mis a jour régulièrement avec de nouveaux projets et 
-                    des compétences acquises.
-                </p>
-                <div class="project-tech-list">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>Responsive</span>
-                </div>
-                <div class="project-actions">
-                    <a href="https://kurolarry.github.io/portfolio/" class="btn btn-secondary">Voir le projet</a>
-                    <a href="https://github.com/kurolarry/portfolio" class="btn btn-outline" target="_blank">Lien GitHub</a>
-                </div>
-            </article>
+        <h2>Mes Projets</h2>
+        <br>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
 
-            <!-- FORBAN -->
-            <article class="project-card">
-                <div class="project-card-top">
-                    <span class="project-badge">FORBAN</span>
-                    <a class="project-link" href="https://kurolarry.github.io/portfolio/" target="_blank">V1.0 : Finalisé</a>
-                </div>
-                <h3>Application de gestion de Hackaton</h3>
-                <p>Application Web permetant à un organisateur de créer une annonce hackaton en ligne,
-                    gérer les inscriptions et le déroulé de l'événement.
-                </p>
-                <p>
-                    Projet realisé par 4 étudiants. L'objectif était de créer une application web 
-                    complète, avec un backend en Java/Spring Boot et un frontend en HTML/CSS/Bootstrap, 
-                    ainsi que Git pour la gestion de version.
-                </p>
-                <div class="project-tech-list">
-                    <span>Java</span>
-                    <span>Spring Boot</span>
-                    <span>HTML/CSS</span>
-                    <span>Bootstrap</span>
-                    <span>PostgreSQL</span>
-                    <span>Git/GitHub</span>
-                </div>
-                <div class="project-actions">
-                    <a href="assets/cv/ApercuHackForban.pdf" class="btn btn-secondary" target="_blank">Aperçu du projet</a>
-                    <a href="https://github.com/kurolarry/HackForban" class="btn btn-outline" target="_blank">Lien GitHub</a>
-                </div>
-            </article>
+            <!-- Portfolio-->
+            <div class="col" >
+                <div class="card h-100" id="proj" >
 
-            <!-- Ciné-Log -->
-            <article class="project-card">
-                <div class="project-card-top">
-                    <span class="project-badge">Ciné-Log</span>
-                    <a class="project-link" href="#" target="_blank">En cours de développement</a>
-                </div>
-                <h3>Liste de films Personnalisée</h3>
-                <p>
-                    Ce projet est un espace personalisé, pour cinephiles desirant générer leur liste de films.
-                </p>
-                <p>
-                    Il s'inscrit dans le cadre d'un apprentissage personnel, dans le but de : 
-                    - Apprendre à creer et utiliser les API REST.
-                    - Maîtriser les concepts d'authentification JWT.
-                    - Approfondir mes compétences en JavaScript ES6+ et Node.js/Express.
-                </p>
-                <div class="project-tech-list">
-                    <span>JavaScript</span>
-                    <span>Node.js/Express</span>
-                    <span>HTML5/CSS3</span>
-                    <span>API & Architecture REST</span>
-                    <span>Authentification JWT</span>
-                    <span>Git/GitHub</span>
-                </div>
-                <div class="project-actions">
-                    <!--
-                    <a href="#" class="btn btn-secondary">Voir le projet</a>
-                        -->
-                    <a href="https://github.com/kurolarry/cine-log" class="btn btn-outline" target="_blank">Lien GitHub</a>
+                    <img src="assets/images/imgProjetPortfolio.png" class="card-img-top" alt="imgProjetPortfolio">
+
+                    <div class="card-body">
+                        
+                        <h5 class="card-title">Mon Portfolio</h5>
+                        <p class="card-text">
+                            <p>Site personnel présentant projets, compétences et contact, 
+                                optimisé pour mobile.
+                            </p>
+                            <br>
+                            <div class="project-actions">
+                                <a href="https://kurolarry.github.io/portfolio/" class="btn btn-secondary">Voir le projet</a>
+                                <a href="https://github.com/kurolarry/portfolio" class="btn btn-outline" target="_blank">Lien GitHub</a>
+                            </div>
+                        </p>
                     
+                    </div>
                 </div>
-            </article>
-            
-            <!-- Inscription Ecole -->
-            <article class="project-card">
-                <div class="project-card-top">
-                    <span class="project-badge">Inscription Ecole</span>
-                    <a class="project-link" href="#" target="_blank">Finalisé</a>
-                </div>
-                <h3>Optimisation d'inscriptions avec Design Patterns</h3>
-                <p>
-                    Projet Java permettant de simuler le processus d'inscription dans une école.
-                </p>
-                <p>
-                    Realisé en groupe et optimisé avec POO et Design Patterns.
-                </p>
-                <div class="project-tech-list">
-                    <span>POO Java</span>
-                    <span>Design Patterns</span>
-                    <span>Git/GitHub</span>
-                </div>
-                <div class="project-actions">
-                    <!--
-                    <a href="#" class="btn btn-secondary">Voir le projet</a>
-                        -->
-                    <a href="https://github.com/kurolarry/InscriptionEcole.git" class="btn btn-outline" target="_blank">Voir le code</a>
-                    
-                </div>
-            </article>
+            </div>
 
-            <!-- Gestion de courses -->
-            <article class="project-card">
-                <div class="project-card-top">
-                    <span class="project-badge">Courses En ligne</span>
-                    <a class="project-link" href="#" target="_blank">Finalisé</a>
-                </div>
-                <h3>Site Web de Gestion de Courses</h3>
-                <p>
-                    Application Web de gestion de courses en ligne.
-                </p>
-                <p>
-                        conteneurisé avec Docker et orchestré avec Kubernetes, 
-                        ce site web permet aux utilisateurs de générer une liste 
-                        de courses à cocher.
-                        Projet réalisé en groupe.
-                </p>
-                <div class="project-tech-list">
-                    <span>JavaScript</span>
-                    <span>HTML/CSS</span>
-                    <span>Node.js</span>
-                    <span>Docker</span>
-                    <span>Kubernetes</span>
-                    <span>PostgreSQL</span>
-                    <span>Git</span>
-                </div>
-                <div class="project-actions">
-                    <!--
-                    <a href="#" class="btn btn-secondary">Voir le projet</a>
-                    <a href="#" class="btn btn-outline" target="_blank">Voir le code</a>
-                    -->
-                </div>
-            </article>
-        </div>
-    </section>
-
+            <!--Cinelog-->
+            <div class="col" >
+                <div class="card h-100" id="proj">
+                    <img src="assets/images/imgProjetCineLog.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ciné-Log</h5>
+                        <p class="card-text">
+                            <p>
+                                Ce projet est un espace personalisé, pour cinéphiles désirant générer une
+                                liste personalisé de films, et d'y preciser s'il est à voir ou s'il a déjà été vu.
+                            </p>
     
-
-
-    <!-- Skills Section -->
-
-    <section  class="skills" id="skills">
-        <h2>Compétences</h2>
-        <h3>Frontend:</h3>
-        <div class="skills-container">
-            <div class="skill">
-                <i class='bx bxl-html5'></i>
-                <i class='bx bxl-css3'></i>
-                <h3>HTML5/CSS3</h3>
+                            <br>
+                            <div class="project-actions">
+                                <!--
+                                <a href="#" class="btn btn-secondary">Voir le projet</a>
+                                    -->
+                                <a href="https://github.com/kurolarry/cine-log" class="btn btn-outline" target="_blank">Lien GitHub</a>
+                                
+                            </div>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="skill">
-                <i class='bx bxl-javascript'></i>
-                <h3>JavaScript ES6</h3>
+
+            <!--Forban-->
+            <div class="col" >
+                <div class="card h-100" id="proj">
+
+                    <img src="assets/images/imgProjetForban.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HackForban</h5>
+                        <p class="card-text" >
+
+                            <p>Application Web permetant à un organisateur de créer une annonce hackaton en ligne,
+                                gérer les inscriptions, affecter des jury, publier un sujet et manager le déroulé de l'événement.
+                            </p>
+                            
+                            <br>
+                            <div class="project-action">
+                                <a href="assets/cv/ApercuHackForban.pdf" class="btn btn-secondary" >Aperçu du projet</a><br>
+                                <a href="https://github.com/kurolarry/HackForban" class="btn btn-outline " target="_blank">Lien GitHub</a>
+                            </div>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="skill">
-                <i class='bx bxl-tailwind-css'></i>
-                <h3>tailwind CSS</h3>
+
+            <!--Gestion de courses-->
+            <div class="col" >
+                <div class="card h-100" id="proj">
+
+                    <img src="assets/images/imgProjetCourses.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Site Web de Gestion de Courses</h5>
+                        <p class="card-text" >
+
+                            <p>
+                                Application Web permettant de génerer une liste de courses en ligne et accessible via un compte.
+                                Docker | Kubernetes
+                            </p>
+                            
+                            <br>
+                            <div class="project-action">
+                                <!--
+                                <a href="#" class="btn btn-secondary" >Aperçu du projet</a><br>
+
+                            -->
+                                <a href="https://github.com/kurolarry/ProjetDockerKub.git" class="btn btn-outline " target="_blank">Lien GitHub</a>
+                            </div>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="skill">
-                <i class='bx bxl-react'></i>
-                <h3>React</h3>
+
+            <!--Inscription ecole-->
+            <div class="col" >
+                <div class="card h-100" id="proj">
+
+                    <img src="assets/images/imgProjetEcole.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Optimisation d'inscriptions avec Design Patterns</h5>
+                        <p class="card-text" >
+
+                            <p>
+                                Projet Java permettant de simuler le processus d'inscription dans une école. <br>
+                                Realisé en groupe et optimisé avec POO et Design Patterns.
+                            </p>
+                            
+                            <br>
+                            <div class="project-action">
+                                <!--
+                                <a href="#" class="btn btn-secondary" >Aperçu du projet</a><br>
+                            -->
+                                <a href="https://github.com/kurolarry/InscriptionEcole.git" class="btn btn-outline " target="_blank">Lien GitHub</a>
+                            </div>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        <br>
+    </section>
 
-        <h3>Backend :</h3>
-        <div class="skills-container">
-            <div class="skill">
-                <i class='bx bxl-php'></i>
-                <h3>PHP</h3>
-            </div>
-            <div class="skill">
-                <i class='bx bxl-nodejs'></i>
-                <h3>Node.js / express</h3>
-            </div>
-            <div class="skill">
-                <i class='bx bxl-java'></i>
-                <h3>Java / Spring Boot</h3>
-            </div>
-        </div>
-        <br>
+    <!--Competences-->
+    <section class="skills" id="skills">
+        <h2>Mes competences</h2>
+        <article class="dev">
+            <h3>Développement Web</h3>
+            <div class="skill-dev" style="justify-content: space-between; align-items: center;">
+                <div class="frontend">
+                    <h4>Front-end</h4>
+                    <div class="skill">
+                        <i class='bx bxl-javascript'></i>
+                        <span>JavaScript ES6</span>
+                    </div>
+                    <div class="skill">
+                        <i class='bx bxl-html5'></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill">
+                        <i class='bx bxl-css3'></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill">
+                        <i class='bx bxl-react'></i>
+                        <Span>React</h3>
+                    </div>
+                </div>
+                <div class="backend">
+                    <h4>Back-end</h4>
+                    <div class="skill">
+                        <i class='bx bxl-nodejs'></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill">
+                        <i class='bx bxl-java'></i>
+                        <span>Java | Spring Boot</span>
+                    </div>
+                    <div class="skill">
+                        <i class='bx bxl-php'></i>
+                        <span>PHP</span>
+                    </div>
+                </div>
+                <div class="Autres">
+                    <h4>Base de donnees et outils</h4>
+                    <div class="skill">
+                        <i class='bx bxl-postgresql'></i>
+                        <span>Postgresql</span>
+                    </div>
+                    <div class="skill">
+                        <i class='bx bxl-git'></i>
+                        <span>Git / GitHub</span>
+                    </div>
+                    <div class="skill">
+                        <i class='bx bxl-docker'></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="skill">
+                        <i class='bx bxl-postman'></i>
+                        <span>Postman</span>
+                    </div>
+                </div>
 
-        <h3>Base de données :</h3>
-        <div class="skills-container">    
-            <div class="skill">
-                <i class='bx bxl-mysql'></i>
-                <h3>MySQL</h3>
             </div>
-            <div class="skill">
-                <i class='bx bxl-postgresql'></i>
-                <h3>PostgreSQL</h3>
-            </div>
-        </div>
-        <br>
+            
+        </article>
+        <article style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; flex-wrap: wrap;">
+            <article class="linux">
+                <h3> Notions Environement Linux</h3>
+                <div class="linux">
+                    <ul>
+                        <li>Navigation</li>
+                        <li>Script Shell</li>
+                        <li>Services, SystemD & journalctl</li>
+                        <li>SSH & SCP</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="others">
+                <h3> Autres Notions</h3>
+                <div class="linux">
+                    <ul>
+                        <li>Langage C </li>
+                        <li>Java & design pattern</li>
+                        <li>Python</li>
+                        <li>Notions DevOps</li>
+                    </ul>
+                </div>
 
-        <h3>Outils :</h3>
-        <div class="skills-container">
-            <div class="skill">
-                <i class='bx bxl-git'></i>
-                <h3>Git/GitHub</h3>
-            </div>
-            <div class="skill">
-                <i class='bx bxl-docker'></i>
-                <h3>Docker</h3>
-            </div>
-            <div class="skill">
-                <i class='bx bxl-postman'></i>
-                <h3>Postman</h3>
-            </div>
-        </div>
-        <br>
+            </article>
+
+        </article>
+        
 
     </section>
+
+    <!--certifications-->
+    <section class="certifications" id="certifications" >
+        <h2>Mes certifications</h2>
+        <div id="carouselExampleAutoplaying"  class="carousel slide" data-bs-ride="carousel" style="align-items: center; max-width: 600px;">
+            <div class="carousel-inner" >
+                <div class="carousel-item active" >
+                <img src="assets/images/certifAWSBasics.png" class="d-block w-100"  alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="assets/images/certifDocker.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="assets/images/certifDockerForAbsoluteBeginner.png" class="d-block w-100" alt="...">
+                </div>
+
+                    
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!--vie extrascolaire-->
+    <section class="otherme" id="otherme">
+        <div class="carousel-about">
+            <h2>activités extra scolaires et associatives</h2>
+        </div>
+        <br>
+        <div id="carouselExample2"  class="carousel slide" >
+            <div class="carousel-inner" >
+
+                <!--art visuel-->
+                <div class="carousel-item active" style=> 
+                    <div class="carousel-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; flex-wrap: wrap; width: min(1000px, calc(100% - 2rem));">
+                        <div class="objectif-text" >
+                            <h3> Arts visuels </h3>
+                            <p>
+                                Je suis illustrateur, portraitiste, et laureat d'un concours de dessin. <br>
+                                Je publie régulièrement mes travaux sur mon compte instagram. <br>
+                                Référence : MBOABD Festival, Cameroun - Edition 2021
+                            </p>
+                            <div class="hero-social">
+                                <a href="https://www.instagram.com/kuro_larry" class="contact-card" target="_blank"><i class='bx bxl-instagram'></i></a>
+                            </div>
+
+                        </div>
+                        <div class="objectif-img">
+                            <img src="assets/images/imgDessin.jpg" style="border-radius: 10%; width: 100%; max-width: 400px; " alt="imgDessin">
+                        </div>
+                    </div>
+                </div>
+
+                <!--Musique-->
+                <div class="carousel-item" > 
+                    <div class="carousel-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; flex-wrap: wrap; width: min(1000px, calc(100% - 2rem));">
+                        <div class="objectif-text" style="align-items: center;">
+                            <h3> Musique </h3>
+                            <p>
+                                Je suis bassiste et batteur. <br>
+                                Je suis membre d'un club de musique. <br>
+                                Référence : Club musique Prepavogt & 3iL
+                            </p>
+                        </div>
+                        <div class="objectif-img" >
+                            <img src="assets/images/imgMusique.jpg" style="border-radius: 10%; width: 100%; max-width: 400px; " alt="imgMusique">
+                        </div>
+                    </div>
+                </div>
+
+                <!--Sciences-->
+                <div class="carousel-item" style="width: min(1000px, calc(100% - 2rem));"> 
+                    <div class="carousel-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; flex-wrap: wrap;">
+                        <div class="objectif-text" style="align-items: center;">
+                            <h3> Sciences physiques </h3>
+                            <p>
+                                Je suis passionné par les domaines de la science lié <br>
+                                à l'infiniment grand et l'infiniment petit. <br>
+                                Notament la cosmologie et la physique quantique. <br>
+                        </div>
+                        <div class="objectif-img" >
+                            <img src="assets/images/imgPhysique.jpg" style="border-radius: 10%; width: 100%; max-width: 400px; " alt="imgPhysique">
+                        </div>
+                    </div>
+                </div>
+
+                <!--Cinema-->
+                <div class="carousel-item" style="width: min(1000px, calc(100% - 2rem));"> 
+                    <div class="carousel-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; flex-wrap: wrap;">
+                        <div class="objectif-text" style="align-items: center;">
+                            <h3> le Cinema et l'histoire </h3>
+                            <p>
+                                Je suis passionné par l'univers du cinema et les histoires de manière générale <br>
+                                
+                        </div>
+                        <div class="objectif-img" >
+                            <img src="assets/images/imgCinema.jpg" style="border-radius: 10%; width: 100%; max-width: 400px; " alt="imgCinema">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
 
     <!-- Contact Section -->
-
     <section class="contact" id="contact">
         <h2>Contactez-moi</h2>
+        <br>
         <div class="container contact-grid">
             <a href="mailto:larrytsampi@gmail.com" class="contact-card">
                 <i class='bx bx-envelope'></i>
@@ -391,9 +582,8 @@
         </div>
     </section>
 
-    
-    <!-- Footer -->
 
+    <!-- Footer -->
     <footer class="footer">
         <div >
             <a href="#hero"><i class='bx bx-home'></i>Accueil | </a>
@@ -404,6 +594,6 @@
         </div>
         <p>&copy; 2026 Larry Tsampi Tedou. All rights reserved.</p>
     </footer>
-    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

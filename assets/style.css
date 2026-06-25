@@ -177,6 +177,12 @@ section:not(.hero) {
     color: #4bd8c3;
 }
 
+.carousel-item .carousel-content{
+        display: grid; grid-template-columns: 1fr 1fr;
+        gap: 5rem; 
+        flex-wrap: wrap;
+    }
+
 
 /* 4. HERO SECTION */
 .hero {
@@ -527,12 +533,10 @@ section:not(.hero) {
 
     .hero-content {
         align-items: center;
+        text-align: center;
     }
 
-    .hero-btn {
-        justify-content: center;
-    }
-
+    .hero-btn,
     .hero-social {
         justify-content: center;
         flex-wrap: wrap;
@@ -548,6 +552,28 @@ section:not(.hero) {
 
     .contact-grid {
         grid-template-columns: 1fr;
+    }
+
+    .carousel-item .carousel-content {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 1.25rem !important;
+    }
+
+    .objectif-text,
+    .objectif-img {
+        width: 100% !important;
+    }
+
+    .objectif-img {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .objectif-img img {
+        width: min(100%, 320px) !important;
+        max-width: 320px !important;
+        margin: 0 auto;
     }
 }
 
@@ -579,34 +605,11 @@ section:not(.hero) {
     section h2 {
         font-size: 1.7rem;
     }
-}
 
-@media (max-width: 900px) {
-    .carousel-item .carousel-content[style*="display: grid"] {
-        grid-template-columns: 1fr;
-        gap: 1.25rem;
-    }
-
-    .objectif-text {
-        width: 100%;
-    }
-
-    .objectif-img {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .objectif-img img {
-        width: min(100%, 320px) !important;
-        max-width: 320px !important;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 600px) {
-    .carousel-item .carousel-content[style*="display: grid"] {
-        gap: 1rem;
+    .carousel-item .carousel-content {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
     }
 
     .carousel-content h3 {
